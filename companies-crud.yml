@@ -1,14 +1,8 @@
-server:
-  servlet:
-    context-path: /companies-crud
-  port: 0
 spring:
-  application:
-    name: companies-crud
   datasource:
-    url: jdbc:postgresql://${db_host}:${db_port}/${db_name}
-    username: ${db_username}
-    password: ${db_password}
+    url: jdbc:postgresql://127.0.0.1:5432/companies
+    username: postgres
+    password: postgres
     hikari:
       connection-timeout: 20000
       maximum-pool-size: 5
